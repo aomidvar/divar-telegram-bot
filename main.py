@@ -33,14 +33,13 @@ def parse_data(data):
     return json.loads(data.text)  
 
 def get_houses_list(data):  
-    logging.info("Data received in get_houses_list: %s", data)  # Log the incoming data  
+    # Log the entire data at this point for inspection  
+    logging.info("Full data received for get_houses_list: %s", data)  
     if "web_widgets" not in data:  
         logging.error("Error: 'web_widgets' key is missing from data.")  
         return []  
-    if "post_list" not in data["web_widgets"]:  
-        logging.warning("Warning: 'post_list' key is missing from 'web_widgets'.")  
-        return []  
-    return data["web_widgets"]["post_list"]  
+    # Continue with the original logic  
+    return data["web_widgets"]["post_list"] 
 
 def extract_house_data(house):  
     data = house["data"]  
