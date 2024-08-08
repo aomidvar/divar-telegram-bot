@@ -7,10 +7,10 @@ import time
 
 import requests
 
-URL = "https://api.divar.ir/v8/web-search/tehran/buy-residential/ajudaniye?districts=87%2C68%2C48%2C57%2C67%2C58%2C71%2C64%2C90%2C42&has-photo=true&price=-12000000000&size=90-&sort=sort_date".format(
+URL = "https://api.divar.ir/v8/web-search/{SEARCH_CONDITIONS}".format(
     **os.environ)
-BOT_TOKEN = "7038231357:AAEAC_2roi_CpACdOLYIvDMzBeQ1HAjwWfg".format(**os.environ)
-BOT_CHATID = "120449289".format(**os.environ)
+BOT_TOKEN = "{BOT_TOKEN}".format(**os.environ)
+BOT_CHATID = "{BOT_CHATID}".format(**os.environ)
 
 proxy_config = {}
 if os.environ.get("HTTP_PROXY", ""):
