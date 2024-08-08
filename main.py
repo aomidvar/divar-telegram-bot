@@ -9,8 +9,8 @@ import requests
 
 URL = "https://api.divar.ir/v8/web-search/{SEARCH_CONDITIONS}".format(
     **os.environ)
-BOT_TOKEN = "{BOT_TOKEN}".format(**os.environ)
-BOT_CHATID = "{BOT_CHATID}".format(**os.environ)
+BOT_TOKEN = "7038231357:AAEAC_2roi_CpACdOLYIvDMzBeQ1HAjwWfg".format(**os.environ)
+BOT_CHATID = "120449289".format(**os.environ)
 
 proxy_config = {}
 if os.environ.get("HTTP_PROXY", ""):
