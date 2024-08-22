@@ -7,7 +7,7 @@ import time
 
 import requests
 
-URL = "https://api.divar.ir/v8/web-search/{SEARCH_CONDITIONS}".format(
+URL = "https://api.divar.ir/s/{SEARCH_CONDITIONS}".format(
     **os.environ)
 BOT_TOKEN = "{BOT_TOKEN}".format(**os.environ)
 BOT_CHATID = "{BOT_CHATID}".format(**os.environ)
